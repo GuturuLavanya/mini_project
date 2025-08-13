@@ -22,6 +22,14 @@ nav{
     z-index: 999; */
 
 }
+#hamburger{
+    display: none;
+}
+.menu-toggle{
+    font-size: 20px;
+    cursor: pointer;
+    display: none;
+}
 .foodimage{
     width: 100%;
 }
@@ -40,6 +48,7 @@ img{
     margin-left: 100px;
     /* position: fixed; */
 }
+
 
 .items{
     color: #ffbe33;
@@ -131,12 +140,7 @@ p{
     border: none;
     color: white;
 }
-#hamburger{
-    display: none;
-}
-.menu-color{
-    display: none;
-}
+
 
 
 .container3{
@@ -1331,8 +1335,9 @@ body,html{
     
 }
 .menu-toggle-label{
-     display: none;
+    display: none;
 }
+
 
 
 
@@ -1345,12 +1350,7 @@ body,html{
     padding: 0;
     margin: 0;
   }
-  #menu-toggle:checked ~  .menu{
-        /* display: inline-flex;
-        margin-right: 0px;
-        position: sticky; */
-        display: flex;
-  }
+ 
     .container{
         width: 100%;
     }
@@ -1370,13 +1370,16 @@ body,html{
         width: 100%;
      display: flex;
     }
-    /* #hamburger{
-        display: none;
-        color: white;
-    } */
-    .menu-color{
-        display: inline-block;
-
+     .menu-toggle{
+        display: block;
+        
+    } 
+    .menu{
+        display:none;
+        position: absolute;
+        top: 60px;
+        right: 20px;
+        flex-direction: column;
     }
     .item,.items,.bi,.btn{
         display: none;
@@ -1392,10 +1395,10 @@ body,html{
     width: 100%;
    
 }
-.person{
+/* .person{
     display: inline-block;
     display: flex;
-}
+} */
 .container3{
     width: 100%;
     display: flex;
@@ -1601,26 +1604,18 @@ body,html{
     margin-left: 250px;
 }
 #hamburger:checked ~ .menu{
-    display: flex;
-    color: white;
+    display:flex;
+    flex-direction: column;
 }
-#hamburger{
-        display: inline-block;
-        margin-left: auto;
-        cursor: pointer;
-        color: white;
+.menu-toggle-label{
+    display: block;
+}
 
-    }
-    .menu-toggle-label{
-        font-size: 24px;
-        cursor: pointer;
-        padding: 8px;
-        display: block;
-        color: white;
-    }
+}
+
    
     
-}
+
 
 
 
